@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:Biblioteka.Mobile.ViewModels"
+             mc:Ignorable="d"
+             x:Class="Biblioteka.Mobile.Views.ProfilPage">
+    <ContentPage.BindingContext>
+        <vm:ProfilViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Padding="10">
+            <Label Text="Ime" FontSize="Medium"></Label>
+            <Entry Text="{Binding Ime}" />
+            <Label Text="Prezime" FontSize="Medium"></Label>
+            <Entry Text="{Binding Prezime}" />
+            <Label Text="Korisničko ime" FontSize="Medium"></Label>
+            <Entry Text="{Binding Username}" />
+            <Label Text="Lozinka" FontSize="Medium"></Label>
+            <Entry Text="{Binding Password}" IsPassword="True"/>
+            <Label Text="Email" FontSize="Medium"></Label>
+            <Entry Text="{Binding Email}"/>
+            <Label Text="Adresa" FontSize="Medium"></Label>
+            <Entry  Text="{Binding Adresa}" />
+            <Label Text="Telefon" FontSize="Medium"></Label>
+            <Entry Text="{Binding Telefon}" />
+            <Button Text="Sačuvaj" Command="{Binding sacuvajCommand}"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:Biblioteka.Mobile.ViewModels"
+             mc:Ignorable="d"
+             x:Class="Biblioteka.Mobile.Views.ClanarinePage">
+    <ContentPage.BindingContext>
+        <vm:ClanarineViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Podaci o uplaćenim članarinama" BackgroundColor="DeepSkyBlue" FontSize="Large" d:Text="Item name" TextColor="White"  FontFamily="Verdana" HorizontalOptions="CenterAndExpand"></Label>
+
+            <ListView ItemsSource="{Binding clanarineList}" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="10" Orientation="Horizontal">                               
+                                <StackLayout Orientation="Vertical">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="DATUM UPLATE:" Style="{DynamicResource ListItemTextStyle}" 
+                                    FontSize="16" FontAttributes="Bold" TextColor="DeepSkyBlue"></Label>
+                                        <Label Text="{Binding DatumUplate, StringFormat='{0:MMMM dd, yyyy}'}" 
+                                    d:Text="{Binding .}"
+                                    LineBreakMode="NoWrap" 
+                                    Style="{DynamicResource ListItemTextStyle}" 
+                                    FontSize="16" />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="DATUM ISTEKA:" Style="{DynamicResource ListItemTextStyle}" 
+                                    FontSize="16" FontAttributes="Bold" TextColor="DeepSkyBlue"></Label>
+                                        <Label Text="{Binding DatumIsteka, StringFormat='{0:MMMM dd, yyyy}'}" 
+                                d:Text="{Binding .}"
+                                LineBreakMode="NoWrap" 
+                                Style="{DynamicResource ListItemTextStyle}" 
+                                FontSize="16" />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="IZNOS:" Style="{DynamicResource ListItemTextStyle}" 
+                                    FontSize="16" FontAttributes="Bold" TextColor="DeepSkyBlue"></Label>
+                                        <Label Text="{Binding Iznos}" 
+                                d:Text="{Binding .}"
+                                LineBreakMode="NoWrap" 
+                                Style="{DynamicResource ListItemTextStyle}" 
+                                FontSize="16" />
+                                    </StackLayout>                                    
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

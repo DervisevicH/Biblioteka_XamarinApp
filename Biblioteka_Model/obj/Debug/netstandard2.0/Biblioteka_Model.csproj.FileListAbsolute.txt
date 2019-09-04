@@ -1,0 +1,9 @@
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_Model\bin\Debug\netstandard2.0\Biblioteka_Model.deps.json
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_Model\bin\Debug\netstandard2.0\Biblioteka_Model.dll
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_Model\bin\Debug\netstandard2.0\Biblioteka_Model.pdb
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_Model\obj\Debug\netstandard2.0\Biblioteka_Model.csproj.CoreCompileInputs.cache
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_Model\obj\Debug\netstandard2.0\Biblioteka_Model.AssemblyInfoInputs.cache
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_Model\obj\Debug\netstandard2.0\Biblioteka_Model.AssemblyInfo.cs
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_Model\obj\Debug\netstandard2.0\Biblioteka_Model.dll
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_Model\obj\Debug\netstandard2.0\Biblioteka_Model.pdb
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_Model\obj\Debug\netstandard2.0\Biblioteka_Model.csprojAssemblyReference.cache

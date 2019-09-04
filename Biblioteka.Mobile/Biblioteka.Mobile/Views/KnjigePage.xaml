@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:Biblioteka.Mobile.ViewModels"
+             xmlns:converters="clr-namespace:Biblioteka.Mobile.Converters"
+             mc:Ignorable="d"
+             x:Class="Biblioteka.Mobile.Views.KnjigePage">
+    <ContentPage.BindingContext>
+        <vm:KnjigeViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ImageConverter x:Key="imgConv"></converters:ImageConverter>            
+        </ResourceDictionary>
+    </ContentPage.Resources>
+   
+    <ContentPage.Content>
+        <StackLayout>
+            <Picker ItemsSource="{Binding zanroviList}" ItemDisplayBinding="{Binding Naziv}" SelectedItem="{Binding SelectedZanr}"></Picker>
+            <SearchBar Placeholder="Naziv knjige" Text="{Binding NazivKnjige}"></SearchBar>
+            <Button Text="Pretraži" Command="{Binding PretragaCommand}"></Button>
+            <ListView ItemsSource="{Binding knjigeList}" ItemSelected="ListView_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="10" Orientation="Horizontal">
+                                <StackLayout>
+                                    <Image Source="{Binding Slika,Converter={StaticResource imgConv}}"></Image>
+                                </StackLayout>
+                                <StackLayout Orientation="Vertical">
+                                    <Label Text="{Binding Naziv}" 
+                                d:Text="{Binding .}"
+                                LineBreakMode="NoWrap" 
+                                Style="{DynamicResource ListItemTextStyle}" 
+                                FontSize="16" />
+                                    <Label Text="{Binding Sadrzaj}" 
+                                d:Text="Item descripton"
+                                LineBreakMode="WordWrap"
+                                Style="{DynamicResource ListItemDetailTextStyle}"
+                                FontSize="13" />
+                                </StackLayout>                               
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

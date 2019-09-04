@@ -1,0 +1,217 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\HD\\Desktop\\IB130111\\Biblioteka\\Biblioteka.Mobile\\Biblioteka.Mobile.iOS\\Biblioteka.Mobile.iOS.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\HD\\Desktop\\IB130111\\Biblioteka\\Biblioteka.Mobile\\Biblioteka.Mobile.iOS\\Biblioteka.Mobile.iOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HD\\Desktop\\IB130111\\Biblioteka\\Biblioteka.Mobile\\Biblioteka.Mobile.iOS\\Biblioteka.Mobile.iOS.csproj",
+        "projectName": "Biblioteka.Mobile.iOS",
+        "projectPath": "C:\\Users\\HD\\Desktop\\IB130111\\Biblioteka\\Biblioteka.Mobile\\Biblioteka.Mobile.iOS\\Biblioteka.Mobile.iOS.csproj",
+        "packagesPath": "C:\\Users\\HD\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HD\\Desktop\\IB130111\\Biblioteka\\Biblioteka.Mobile\\Biblioteka.Mobile.iOS\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {
+              "C:\\Users\\HD\\Desktop\\IB130111\\Biblioteka\\Biblioteka.Mobile\\Biblioteka.Mobile\\Biblioteka.Mobile.csproj": {
+                "projectPath": "C:\\Users\\HD\\Desktop\\IB130111\\Biblioteka\\Biblioteka.Mobile\\Biblioteka.Mobile\\Biblioteka.Mobile.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.0.0.425677, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\HD\\Desktop\\IB130111\\Biblioteka\\Biblioteka.Mobile\\Biblioteka.Mobile\\Biblioteka.Mobile.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HD\\Desktop\\IB130111\\Biblioteka\\Biblioteka.Mobile\\Biblioteka.Mobile\\Biblioteka.Mobile.csproj",
+        "projectName": "Biblioteka.Mobile",
+        "projectPath": "C:\\Users\\HD\\Desktop\\IB130111\\Biblioteka\\Biblioteka.Mobile\\Biblioteka.Mobile\\Biblioteka.Mobile.csproj",
+        "packagesPath": "C:\\Users\\HD\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HD\\Desktop\\IB130111\\Biblioteka\\Biblioteka.Mobile\\Biblioteka.Mobile\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\HD\\Desktop\\IB130111\\Biblioteka\\Biblioteka_Model\\Biblioteka_Model.csproj": {
+                "projectPath": "C:\\Users\\HD\\Desktop\\IB130111\\Biblioteka\\Biblioteka_Model\\Biblioteka_Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Flurl": {
+              "target": "Package",
+              "version": "[2.8.2, )"
+            },
+            "Flurl.Http": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.0.0.425677, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\HD\\Desktop\\IB130111\\Biblioteka\\Biblioteka_Model\\Biblioteka_Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HD\\Desktop\\IB130111\\Biblioteka\\Biblioteka_Model\\Biblioteka_Model.csproj",
+        "projectName": "Biblioteka_Model",
+        "projectPath": "C:\\Users\\HD\\Desktop\\IB130111\\Biblioteka\\Biblioteka_Model\\Biblioteka_Model.csproj",
+        "packagesPath": "C:\\Users\\HD\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HD\\Desktop\\IB130111\\Biblioteka\\Biblioteka_Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Flurl": {
+              "target": "Package",
+              "version": "[2.8.2, )"
+            },
+            "Flurl.Http": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

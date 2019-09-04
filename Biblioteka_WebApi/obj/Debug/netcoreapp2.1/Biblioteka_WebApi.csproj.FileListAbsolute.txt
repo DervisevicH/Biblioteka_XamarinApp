@@ -1,0 +1,17 @@
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_WebApi\bin\Debug\netcoreapp2.1\Biblioteka_WebApi.deps.json
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_WebApi\bin\Debug\netcoreapp2.1\Biblioteka_WebApi.runtimeconfig.json
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_WebApi\bin\Debug\netcoreapp2.1\Biblioteka_WebApi.runtimeconfig.dev.json
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_WebApi\bin\Debug\netcoreapp2.1\Biblioteka_WebApi.dll
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_WebApi\bin\Debug\netcoreapp2.1\Biblioteka_WebApi.pdb
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_WebApi\obj\Debug\netcoreapp2.1\Biblioteka_WebApi.csprojAssemblyReference.cache
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_WebApi\obj\Debug\netcoreapp2.1\Biblioteka_WebApi.csproj.CoreCompileInputs.cache
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_WebApi\obj\Debug\netcoreapp2.1\Biblioteka_WebApi.RazorAssemblyInfo.cache
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_WebApi\obj\Debug\netcoreapp2.1\Biblioteka_WebApi.RazorAssemblyInfo.cs
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_WebApi\obj\Debug\netcoreapp2.1\Biblioteka_WebApi.AssemblyInfoInputs.cache
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_WebApi\obj\Debug\netcoreapp2.1\Biblioteka_WebApi.AssemblyInfo.cs
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_WebApi\obj\Debug\netcoreapp2.1\Biblioteka_WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_WebApi\obj\Debug\netcoreapp2.1\Biblioteka_WebApi.dll
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_WebApi\obj\Debug\netcoreapp2.1\Biblioteka_WebApi.pdb
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_WebApi\bin\Debug\netcoreapp2.1\Biblioteka_Model.dll
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_WebApi\bin\Debug\netcoreapp2.1\Biblioteka_Model.pdb
+C:\Users\HD\Desktop\IB130111\Biblioteka\Biblioteka_WebApi\obj\Debug\netcoreapp2.1\Biblioteka_WebApi.csproj.CopyComplete

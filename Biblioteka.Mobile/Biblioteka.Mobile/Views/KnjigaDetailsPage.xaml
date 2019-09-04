@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:converters="clr-namespace:Biblioteka.Mobile.Converters"
+             xmlns:vm="clr-namespace:Biblioteka.Mobile.ViewModels"
+             mc:Ignorable="d"
+             x:Class="Biblioteka.Mobile.Views.KnjigaDetailsPage">
+    <ContentPage.BindingContext>
+        <vm:KnjigaDetailViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ImageConverter x:Key="imgConv"></converters:ImageConverter>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Padding="10" Orientation="Horizontal" >
+            <StackLayout Orientation="Vertical">
+                <Button BackgroundColor="LightGray" Text="Rezerviši knjigu" HorizontalOptions="Fill" Command="{Binding rezervisiCommand}"></Button>
+                <Label Text="{Binding Knjiga.Naziv}" FontSize="Medium" d:Text="Item name" TextColor="DarkGray"  FontFamily="Verdana" HorizontalOptions="Start"></Label>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image BackgroundColor="AliceBlue" HorizontalOptions="Start"  Source="{Binding Knjiga.Slika,Converter={StaticResource imgConv}}"></Image>
+                    <Frame BorderColor="Gray">
+                        <Label  FontSize="10"  Margin="10, 0" Text="{Binding Knjiga.Sadrzaj}" d:Text="Item name" TextColor="Black" LineBreakMode="WordWrap" FontAttributes="Bold"/>
+                    </Frame>
+                </StackLayout>
+                <Label Text="(Ocijenite knjigu)" FontSize="Micro" TextColor="LightSlateGray" FontAttributes="Italic" HorizontalOptions="Start"></Label>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                    <Image Source="One.png" HeightRequest="30" WidthRequest="30" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding jedanCommand}"></TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Source="Two.png" HeightRequest="30" WidthRequest="30">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding dvaCommand}"></TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Source="Three.png" HeightRequest="30" WidthRequest="30">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding triCommand}"></TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Source="Four.png" HeightRequest="30" WidthRequest="30">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding cetiriCommand}"></TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Source="Five.png" HeightRequest="30" WidthRequest="30">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding petCommand}"></TapGestureRecognizer>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
+               
+               
+                <Frame BorderColor="Gray">
+                    <StackLayout >
+                        <Entry Placeholder="Unesite komentar" Text="{Binding Recenzija}" HorizontalOptions="FillAndExpand" ></Entry>
+                        <Button Text="Dodaj" Command="{Binding dodajKomentarCommand}" HorizontalOptions="End"></Button>                        
+                        <Label FontSize="Micro" TextColor="LightSlateGray" Text="Komentari" HorizontalOptions="Center"></Label>
+                        <ListView ItemsSource="{Binding recenzijeLista}">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <StackLayout Padding="10" Orientation="Horizontal">
+                                            <StackLayout Orientation="Vertical">
+                                                <StackLayout Orientation="Vertical">
+                                                    <Label Text="{Binding Korisnik.ImePrezime}" Style="{DynamicResource ListItemTextStyle}" 
+                                    FontSize="12" FontAttributes="Italic" ></Label>
+                                                    <Label Text="{Binding DatumObjave}" FontAttributes="Italic" FontSize="8"></Label>
+                                                </StackLayout>
+                                                <Label Text="{Binding Recenzija}" 
+                                    d:Text="{Binding .}"
+                                    LineBreakMode="NoWrap" 
+                                    Style="{DynamicResource ListItemTextStyle}" 
+                                    FontSize="16" />
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            
+            <StackLayout Orientation="Vertical">
+                <Label Text="SLIČNE KNJIGE" HorizontalOptions="Center" TextColor="Blue" FontAttributes="Bold"></Label>
+                <ListView ItemsSource="{Binding preporukaLista}" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout>
+                                    <Image Source="{Binding Slika,Converter={StaticResource imgConv}}"></Image>                                   
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>           
+        </StackLayout>
+        
+        
+    </ContentPage.Content>
+</ContentPage>
